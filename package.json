@@ -1,0 +1,21 @@
+{
+	"name": "vitest-reproduce",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest",
+		"coverage": "vitest run --coverage"
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^18.14.1",
+		"@vitest/coverage-istanbul": "^0.29.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.5",
+		"vitest": "^0.29.1"
+	}
+}
