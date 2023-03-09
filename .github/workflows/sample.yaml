@@ -1,0 +1,16 @@
+name: "CI/CD"
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  Tests: # make sure build/ci work properly
+    runs-on:
+      - ubuntu-22.04
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
